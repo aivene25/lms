@@ -20,7 +20,7 @@ Considering the operating system already have Nodejs and Composer installed.
 
 ### Project 
 
-- Clone the project from Github Repo  `git@github.com:arifulhb/library-management-system.git`
+- Clone the project from Github Repo  `https://github.com/aivene25/lms.git`
 - Go to Applications root folder and install composer packages. `composer install`        
 - Install Node Modules `npm install`
 - Run Grunt Task Runner `grunt` 
@@ -34,8 +34,8 @@ Considering the operating system already have Nodejs and Composer installed.
 - Set this following variables in `.env` as bellow
 
 
-     APP_ENV=production
-     APP_DEBUG=false
+     APP_ENV=local
+     APP_DEBUG=true
      
 #### Database Migration & Seed
 
