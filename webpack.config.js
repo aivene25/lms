@@ -6,7 +6,7 @@ var config = {
     entry:{
         app: "./entry.js",
         vendor: [ "jquery", 'lodash', 'moment','bootstrap',
-            './node_modules/admin-lte/dist/js/app.js',
+            './node_modules/admin-lte/dist/js/adminlte.min.js',
             './node_modules/bootstrap-3-typeahead/bootstrap3-typeahead.js',
             './node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js'
         ]
@@ -34,7 +34,7 @@ var config = {
     ],
     resolve: {
         alias: {
-            'adminlte'              : './node_modules/admin-lte/dist/js/app.js',
+            'adminlte'              : './node_modules/admin-lte/dist/js/adminlte.min.js',
             'inputmask'             : './node_modules/jquery.inputmask/dist/inputmask/jquery.inputmask.js'
         }
     },

@@ -86,6 +86,14 @@
                                                     <i class="fa fa-trash"></i></a>
                                             </div>
                                         </td>
+                                        <td>
+                                        <form role="form" method="POST" action="{{ url('/admin/borrow') }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                                            <button class="btn btn-success" type="submit">Borrow</button>
+                                        </form>
+                                        
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>

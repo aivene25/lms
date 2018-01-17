@@ -59,6 +59,14 @@
                                         </td>
                                         <td>{{ $book->shelfName }}</td>
                                         <td>{{ $book->created_at->diffForHumans() }}</td>
+                                        <td>
+                                        <form role="form" method="POST" action="{{ url('/admin/borrow') }}">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                                            <button class="btn btn-success" type="submit">Borrow</button>
+                                        </form>
+                                        
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
